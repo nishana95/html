@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            background-color: aqua;
+        }
+
+        
+        @media screen and (max-width:800px) {
+            .main{
+                background-color: bisque;
+            }
+        }
+        @media screen and (max-width:600px) {
+            .main{
+                background-color: aquamarine;
+            }
+            div{
+                flex-direction: column;
+            }
+        }
+
+        
+        div{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .main2{
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            box-shadow: 10px 10px 10px 10px black;
+        }
+        p{
+            text-shadow: 5px 5px 5px green;
+        }
+
+    </style>
+    
+</head>
+<body class="main">
+
+    <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae dolorum doloribus eius sint sequi eligendi dolore enim odit, dolores inventore repellendus mollitia distinctio dolor! Ipsam similique possimus id accusantium sint.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius obcaecati quisquam animi laboriosam doloremque deleniti, non eligendi voluptatum pariatur exercitationem provident consectetur voluptas aspernatur facere doloribus vel totam ipsa hic.</p>
+    </div>
+
+    <!-- <div class="main2"></div> -->
+
+    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-backpack-fill" viewBox="0 0 16 16">
+  <path d="M5 13v-3h4v.5a.5.5 0 0 0 1 0V10h1v3z"/>
+  <path d="M6 2v.341C3.67 3.165 2 5.388 2 8v5.5A2.5 2.5 0 0 0 4.5 16h7a2.5 2.5 0 0 0 2.5-2.5V8a6 6 0 0 0-4-5.659V2a2 2 0 1 0-4 0m2-1a1 1 0 0 1 1 1v.083a6 6 0 0 0-2 0V2a1 1 0 0 1 1-1m0 3a4 4 0 0 1 3.96 3.43.5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14A4 4 0 0 1 8 4M4.5 9h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5"/>
+</svg></a>
+    
+</body>
+</html>

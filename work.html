@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: green;
+            cursor: pointer;
+            width: 100px;
+            height: 25px;
+            transition: width 2s, height 2s, rotate 2s;
+        }
+        button:hover{
+            width: 200px;
+            height: 200px;
+            rotate: 180deg;
+        }
+
+        input{
+            width: 200px;
+            height: 25px;
+            transition: width 2s;
+            /* transition-timing-function: ; */
+            transition-delay: 2s;
+        }
+        input:focus{
+            background-color: rgb(226, 232, 226);
+            width: 300px;
+        }
+
+        img{
+            position: relative;
+            width:200px ;
+            height:200px;
+            border-radius: 50%;
+            animation-name: aaaa;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: 2;
+            animation-direction: normal;
+        }
+
+        @keyframes aaaa{
+            0%{rotate:0deg;}
+            25%{rotate:90deg;}
+            50%{rotate: 180deg;}
+            75%{rotate: 270deg;}
+            100%{rotate: 360deg;}
+        }
+        
+        .main{
+            background-color: aqua;
+            width: fit-content;
+            transform: translate(-170px);
+            animation-name: view;
+            animation-duration: 4s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes view{
+            0%{transform: translate(-170px);}
+            100%{transform: translate(200px);}
+        }
+        h1{
+            padding: 10px
+        }
+    </style>
+</head>
+<body>
+    <button>Register</button>
+    <input type="text">
+    <br>
+    <img src="images/3d-abstract-space-background-with-wireframe-landscape.jpg" alt="" >
+    <div class="main">
+        <h1>welcome</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        }
+
+        .registration-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* Equal split */
+            height: 100vh;
+        }
+
+        /* Left side with the background image */
+        .left-panel {
+            background: url('images/taskimage.jpg') no-repeat center center;
+            background-size: cover;
+        }
+
+        /* Right side form area */
+        .right-panel {
+            background-color: #1a1a1c;
+            /* Dark grey/black background */
+            color: white;
+            padding: 60px 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            font-weight: 500;
+        }
+
+        .input-group {
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        /* Styling the inputs to have only a bottom border */
+        input,
+        select {
+            width: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #777;
+            padding: 10px 0;
+            color: white;
+            font-size: 1.1rem;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        input::placeholder {
+            color: #999;
+        }
+
+        input:focus {
+            border-bottom: 1px solid #fff;
+        }
+
+        /* Specific styling for the custom select arrow */
+        .select-group::after {
+            content: '▼';
+            font-size: 0.7rem;
+            position: absolute;
+            right: 0;
+            bottom: 15px;
+            color: white;
+            pointer-events: none;
+        }
+
+        select {
+            appearance: none;
+            /* Removes default browser styling */
+            cursor: pointer;
+        }
+
+        /* The Green Submit Button */
+        .submit-btn {
+            background-color: #4cd137;
+            /* Vibrant green */
+            color: white;
+            border: none;
+            padding: 12px 60px;
+            border-radius: 50px;
+            /* Capsule shape */
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .submit-btn:hover {
+            background-color: #44bd32;
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="registration-container">
+        <div class="left-panel">
+            <div class="overlay-text">
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <h2>Registration info</h2>
+
+            <form>
+                <div class="input-group">
+                    <input type="text" placeholder="First Name">
+                </div>
+
+                <div class="input-group">
+                    <input type="text" placeholder="Address">
+                </div>
+
+                <div class="input-group">
+                    <input type="text" placeholder="Zip Code">
+                </div>
+
+                <div class="input-group select-group">
+                    <select>
+                        <option value="" disabled selected>State</option>
+                        <option value="ny">New York</option>
+                        <option value="ca">California</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <input type="text" placeholder="Username(6-8 characters)">
+                </div>
+
+                <div class="input-group">
+                    <input type="email" placeholder="Email">
+                </div>
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
