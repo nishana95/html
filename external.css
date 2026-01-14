@@ -1,3 +1,14 @@
+p::first-letter{
+    font-size: 2em;
+}
+input{
+    border: 1px solid red;
+}
+a:hover{
+    color: green;
+}
 .para{
-    background-color:cyan;
+    border:2px solid black;
+    margin: 20px;
+    padding: 20px;
 }

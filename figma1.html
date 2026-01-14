@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double C&B</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <style>
+        .navbar {
+            width: 1440;
+            height: 96;
+            justify-content: space-between;
+            opacity: 1;
+            padding-top: 17px;
+            padding-right: 26px;
+            padding-bottom: 17px;
+            padding-left: 26px;
+        }
+
+        .navbar-brand {
+            width: 130;
+            height: 27;
+
+        }
+
+        .d-flex button{
+            color: white;
+            width: 100px;
+            height: 40px;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+        }
+
+        .section {
+            padding-right: 124px;
+            padding-bottom: 64px;
+            padding-left: 124px;
+        }
+
+        .heading {
+            padding-top: 100px;
+
+
+        }
+
+        .first-para {
+            font-size: 20px;
+
+        }
+
+        .button-2 {
+            background-color: orange;
+            width: 165px;
+            border-radius: 20px;
+            border: none;
+            height: 45px;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+
+        .first-imag {
+            width: 531;
+            height: 428;
+            gap: 10px;
+            opacity: 1;
+            border-radius: 12px;
+            padding: 10px;
+
+        }
+
+        .frame-2 {
+            background-color: rgba(243, 243, 243, 1);
+            width: 1440;
+            height: 268;
+            gap: 30px;
+            opacity: 1;
+
+            padding-right: 150px;
+            padding-bottom: 64px;
+            padding-left: 150px;
+        }
+
+        .frame-3 img {
+            width: 503.5px;
+            height: 428px;
+            border-radius: 30px;
+            padding-left: 80px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .frame-3 {
+            height: 500px;
+        }
+
+        .frame-2 h6 {
+            font-weight: bold;
+        }
+
+        .background-image {
+            background: linear-gradient(80.53deg, rgba(255, 207, 35, 0.7) 0%, rgba(255, 226, 123, 0.7) 100%), url(images/cta-image.jpg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding-top: 192px;
+            padding-right: 450px;
+            padding-bottom: 192px;
+            padding-left: 450px;
+        }
+
+        .bg-image-btn {
+            border-radius: 30px;
+            padding: 10px 28px;
+            font-weight: 500;
+            background-color: white;
+            text-decoration: none;
+            color: black;
+        }
+
+        .footer {
+            padding-top: 96px;
+            padding-right: 150px;
+            padding-bottom: 96px;
+            padding-left: 150px;
+
+
+        }
+
+        .footer h5,
+        a {
+            color: white;
+        }
+
+        .footer a {
+            text-decoration: none;
+        }
+
+        .subscribe-input input {
+            background: transparent;
+            border: none;
+            outline: none;
+            color: rgba(255, 255, 255, 0.15);
+            width: 100%;
+        }
+
+        .subscribe-input button {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold " href="#">Double C&B</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 t">
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#">Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#">Food</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#">How this diet work?</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <button class="btn bg-black text-white rounded-4" type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADING  -->
+
+    <div class="container-fluid">
+        <div class="section row align-content-center">
+            <div class="heading col-lg-6">
+                <h1 class="fw-bold text-black">Double Cheese<br> and Bacon</h1>
+                <p class="first-para">Find the best keto recipes with their nutritional<br> values and more.</p>
+                <div class="row">
+                    <div class="col-lg-5  pt-2 ps-0">
+                        <button class="button-2">Recipes</button>
+                    </div>
+                    <div class="section-para col-lg-7 pt-2 ps-0">
+                        <p>400+ delicious and amazing recipes for your keto diet!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="first-image col-lg-6 pt-5 ps-5">
+                <img style="width: 531px;height: 428px;border-radius: 12px;" src="images/bouble_C&B_1.png"
+                    alt="No Image">
+            </div>
+        </div>
+    </div>
+
+    <!-- FRAME-2 -->
+    <div class="container-fluid frame-2 ps-5">
+        <div class="row pt-5">
+            <div class="feature-1 col-4">
+                <h6><svg style="color: yellow;" xmlns="http://www.w3.org/2000/svg" width="70" height="70"
+                        fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                    </svg>Nutritional Values</H6>
+                <p>Double C&B will provide you the nutritional value of a recipe. It describes the amount of
+                    carbohydrates, fats, proteins and energy that can be used during digestion.</p>
+            </div>
+            <div class="feature-2 col-4">
+                <h6>Chat with Experts</H6>
+                <p>Chat with our experts through our live chat or WhatsApp. Ask about our diet program, how it works and
+                    how to get it!</p>
+            </div>
+            <div class="feature-3 col-4">
+                <h6>Recipes</H6>
+                <p>400+ recipes with their nutritional values. Every week you will find new recipes to add to your diet.
+                    Breakfast, lunch, dinner and desserts available for you.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FRAME-3 -->
+    <div class="container-fluid frame-3 bg-black ps-5">
+        <div class="row">
+            <div class="col-6">
+                <img src="images/mentalhealth_image.jpg" alt="No image">
+            </div>
+            <div class="col-6">
+                <h4 class="text-white">Double C&B Program: How this Work?</h4>
+                <p class="text-white">Our principal goal is to focus in the mental health. Working on us inside, set our
+                    goals and write
+                    down the reasons of why are we doing this will help us to achieve better results, not only in our
+                    body but in our mind. </p>
+                <ul class="text-white">
+                    <li>5 weeks recipes for your breakfast, lunch and dinner.</li>
+                    <li>Zoom calls with our experts. </li>
+                    <li>We will follow your progress during those 5 weeks. </li>
+                    <li>We will provide you tips on how to make this a lifestyle. </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- CARDS -->
+    <div class="container-fluid pt-5">
+        <div class="row">
+            <div class="col-4">
+                <div style="background-color:rgba(243, 243, 243, 1);" class="card w-75 mb-3">
+                    <div class="card-body">
+                        <p class="card-text">“The reason why I wanted to do this program was to work on my mind first
+                            and then on my body, and I did it! They really helped me to understand me inside...”</p>
+                        <img src="images/Customer1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div style="background-color:rgba(243, 243, 243, 1);" class="card w-75 mb-3">
+                    <div class="card-body">
+                        <p class="card-text">“I was lost and tried lots of diets but when I started to follow the Double
+                            C&B program I realized about so many thins that I didn't pay attention before and I’m so
+                            glad I found them!”</p>
+                        <img src="images/Customer2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div style="background-color:rgba(243, 243, 243, 1);" class="card w-75 mb-3">
+                    <div class="card-body">
+                        <p class="card-text">“This program talk about how to communicate with yourself, and how
+                            important is our mental health. Once we work with this, we will see the results in
+                            everything.”</p>
+                        <img src="images/Customer3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- IMAGE -->
+
+    <body>
+        <div class="container-fluid background-image">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <p class="mb-2">It's time to</p>
+                    <h1 class="mb-4">
+                        WORK ON YOURSELF AND BE<br>
+                        YOUR BEST VERSION
+                    </h1>
+                    <a href="#" class="bg-image-btn btn-light shadow">
+                        I want to do it now!
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container-fluid footer bg-black">
+            <div class="row">
+
+                <!-- Brand -->
+                <div class="col-md-3 mb-4">
+                    <div class="brand-title text-white">Double C&B</div>
+                </div>
+
+                <!-- First Column -->
+                <div class="col-md-2 mb-4">
+                    <h5>First column</h5>
+                    <a href="#">First page</a>
+                    <a href="#">Second page</a>
+                    <a href="#">Third</a>
+                    <a href="#">Fourth</a>
+                </div>
+
+                <!-- Second Column -->
+                <div class="col-md-2 mb-4">
+                    <h5>Second</h5>
+                    <a href="#">Fifth page</a>
+                    <a href="#">Sixth page</a>
+                    <a href="#">Eighth</a>
+                </div>
+
+                <!-- Third Column -->
+                <div class="col-md-2 mb-4">
+                    <h5>Third</h5>
+                    <a href="#">Fifth page</a>
+                    <a href="#">Sixth page</a>
+                    <a href="#">Eighth</a>
+                </div>
+
+                <!-- Subscribe -->
+                <div class="col-md-3 mb-4">
+                    <h5>Subscribe</h5>
+                    <div class="subscribe-input">
+                        <input type="email" placeholder="Enter email">
+                        <button>
+                            <svg style="width: 11px;height: 13px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-send-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="subscribe-text text-white">
+                        Join our newsletter to stay up to date on features and releases
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</html>
